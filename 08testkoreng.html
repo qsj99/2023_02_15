@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08testkoreng.html</title>
+<style>
+    *{font-size: 16pt;}
+</style>
+
+<script>
+    function myHap() {
+        var info=''; 
+        var kor=0, eng=0, hap=0, avg=0; //변수 선언 및 초기화 
+        var result = '';
+
+        kor = 70;
+        eng = 69;
+        hap = kor + eng;
+        avg = hap/2;
+        
+        //평균점수 70점부터 ~ 100점 : 축합격, 0~69점: 재시험
+        if(avg>=70){result='축합격' ; }
+            else{result='재시험';}
+       
+        info = '총점=' + hap + '평균=' +avg ;
+        info = info + ' 결과=' + result ; 
+        document.getElementById('display').innerHTML = info;
+    }
+</script>
+
+</head>
+<body>
+    <img src="./images/a2.png" width="300" height="200" >
+    <img src="./images/a2.png" width="300" height="200" >
+    <img src="./images/a2.png" width="300" height="200" >
+    <h2>04testjs.html</h2>
+    <button onclick="javascript:myHap()">   버튼 myHap함수 호출   </button>    
+    <div id="display"></div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06testjs.html</title>
+</head>
+
+<script>
+    function myemp(){
+       var nick='' , age=1, city='' ; //변수공간할당 초기화
+       var data = '안내문' ;
+
+       nick='길동' ;
+       age = 27 ;
+       city = '구로' ;
+       data = '<h3>이름:'+nick+' 나이:'+age+' 주소:'+city+'</h3>';
+       document.getElementById('display').innerHTML = data ;
+    }//end
+
+    function mystar(){
+        var info = '';
+        star1 = '🌼<br>' ;
+        star2 = '🌼🌼<br>' ;
+        star3 = '🌼🌼🌼<br>' ;
+        star4 = '🌼🌼🌼🌼<br>';
+        star5 = '🌼🌼🌼🌼🌼<p>' ;
+        info = star1+star2+star3+star4+star5;
+        document.getElementById('display').innerHTML = info ;
+    }//end
+
+    function mytree(){
+        var flower='🌴<br>🌴🌴<br>🌴🌴🌴<br>🌴🌴🌴🌴<br>🌴🌴🌴🌴🌴';
+        document.getElementById('last').innerHTML = flower ;
+    }//end
+</script>
+
+<body>    
+    <h2>06testjs.html</h2>
+    <img src="./images/cake1.jpg" width=100 height=70>
+    <img src="./images/cake2.jpg" width=100 height=70>
+    <img src="./images/cake3.jpg" width=100 height=70> <p></p>
+    <button onclick="myemp()" > 내정보emp </button>
+    <button onclick="mystar()"> 스타출력 </button>
+    <button onclick="mytree()"> tree출력 </button>
+
+    <div id="display"></div> 
+    <div id="last"></div>
+</body>
+</html>

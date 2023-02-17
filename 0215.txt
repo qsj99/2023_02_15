@@ -1,0 +1,45 @@
+<script>
+   var gtitle='큰제목'; 전역변수 
+   var gnick='공통이름'; 전역 global
+   
+  function myHap(){
+   var info = '' ;  //info=message=msg=data   
+   var kor=0, eng=0, hap=0, avg=0; 변수 초기화
+   kor = 90; 변수값 할당 
+   eng = 85; 변수값 할당
+
+   hap=kor+eng;
+   
+   console.log('총합계=',hap)     => 페이지에서 검사/ F12 눌러서 편집 console탭
+   document.write('총합계=',hap,'<br>'); =>화면에 출력 라인개행 못함
+   info = '총점=' + hap+ '평균=' +avg;
+   document.getElementById('display').innerHTML = info;
+                                     .innerText 
+
+   }
+</script>
+
+
+
+
+
+<button onClick="javascript:myHap();"> 함수호출 </button>   => onclick 대소문자 상관 없
+<button onclick="myHap()">함수호출</button>
+<button onclick="myhap()">함수이름 잘못 기술 </button>
+
+<div id="display"></div> 
+
+function myemp(){
+   var nick='', age=1, city='';
+   var data = '안내문';
+
+   nick='길동';
+   age=27;
+   city='구로';
+   data= '이름:' + nick +'나이:' + age + '주소:' + city;
+   document.getElementById('display'
+}
+
+
+
+

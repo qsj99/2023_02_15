@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+/* Selects the second element of div siblings */
+div:nth-child(2) {
+  background: red;
+}
+div:nth-child(4){
+    background-color: pink;
+}
+
+/* Selects the second li element in a list */
+li:nth-child(2) {
+  background: lightgreen;
+}
+
+/* Selects every third element among any group of siblings */
+:nth-child(3) {
+  background: yellow;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>This is some text.</p>
+</div>
+
+<div>
+  <p>This is some text.</p>
+</div>
+
+<div>
+  <p>This is some text.</p>
+</div>
+
+<div>
+    <p>수요일 </p>
+</div>
+
+<ul>
+  <li>100 First list item</li>
+  <li>200 Second list item</li>
+  <li>300 Third list item</li>
+  <li>400 Fourth list item</li>
+  <li>500 Fifth list item</li>
+</ul>
+
+</body>
+</html>
